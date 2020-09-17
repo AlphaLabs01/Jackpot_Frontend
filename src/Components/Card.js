@@ -17,11 +17,14 @@ if(card.length){
 
    var trail =  newCard.filter((card)=>card.region===props.info.location.toLowerCase()).map((filteredCard)=>{
      return(
+        <>
+        <h1 className="card-text">Time {filteredCard.time} </h1>
         <div className="card-text win-number">
-               Time : {filteredCard.time}
+               update
                 <div className="left"><h2>{filteredCard.yesterday_no}</h2></div>
                 <div className="right"><h2>{filteredCard.today_no}</h2></div>
             </div>
+            </>
         )})
     }
 
@@ -29,7 +32,7 @@ if(card.length){
         <div className="card col-sm-12 col-md-6 col-lg-4" id={props.info.key}>
             <div className="card-body">
             <h4 className="card-title">{props.info.location}</h4>
-            <h1 className="card-text">{props.info.name} </h1>
+            {/* <h1 className="card-text">{props.info.name} </h1> */}
             {/* <div className="card-text win-number"> */}
             {/*     update */}
             {/*     <div className="left"><h2>{props.cardData.yesterday_no}</h2></div> */}
