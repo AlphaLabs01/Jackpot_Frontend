@@ -1,0 +1,120 @@
+.card{
+    padding:30px;
+    display: block !important;
+    border: none !important;
+}
+.card-body{
+    padding:30px;
+    /* background: linear-gradient(55deg, black, #03345f, transparent); */
+    background-color:#03345f ;
+    opacity: 0.95;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #c0bebe;
+    cursor: pointer;
+    display: block !important;
+}
+.card-body:hover{
+    opacity: 1;
+    background: linear-gradient(55deg, black, #03345f);
+}
+.card-row{
+    /* margin: 30px; */
+    opacity: 0.9;
+    display: block !important;
+    padding-left:80px;
+    padding-right: 80px !important;
+}
+.card-title{
+    /* background:linear-gradient(55deg, black, burlywood);  */
+    background-color: #011f3a;
+    /* background: linear-gradient(55deg, rgb(31, 29, 29), #03345f); */
+    
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+}
+.card-text{
+    border-radius: 10px;
+    margin: 30px;
+}
+.card-button{
+    background-color: burlywood;
+    font-weight: 700;
+    font-display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: .9;
+}
+.card-button:hover{
+    opacity: 1;
+}
+.row{
+    margin: 0px;
+}
+@media (max-width:770px){
+    .card{
+        padding:20px !important;
+        display: inline-block !important;
+        border: none !important;
+    }
+    .card-body{
+        padding:20px !important;
+        display: block !important;
+    }
+    .card-row{
+        display: block !important;
+        padding-left:50px;
+        padding-right: 60px !important;
+    }
+    .card-title{
+        padding: 10px;
+    }
+    .card-text{
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+    .card-button{
+        font-display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+@media (max-width:450px){
+    .card{
+        padding:10px !important;
+        display: inline-block !important;
+        border: none !important;
+    }
+    .card-body{
+        padding:10px !important;
+        display: block !important;
+    }
+    .card-row{
+        display: block !important;
+        padding-left:50px;
+        padding-right: 60px !important;
+    }
+    .card-title{
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .card-text{
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+    .card-button{
+        font-display: block;
+        padding: 10px;
+        margin: 0px;
+        font-size: 1rem;
+    }
+}
+.left{
+    position: relative;
+    float: left;
+}
+.right{
+    float: right;
+}

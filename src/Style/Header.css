@@ -1,0 +1,24 @@
+.nav{
+    /* background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61)); */
+    /* opacity: 0.95; */
+    background-color: #022442;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.img-responsive{
+    border-radius: 1px;
+}
+.row{
+    margin: 0px !important;
+}
+.box img{
+    height: 100%;
+    widows: 100%;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.box.small{
+    height: 60px;
+    padding:  10px;
+}
