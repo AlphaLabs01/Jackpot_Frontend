@@ -5,6 +5,7 @@ const Card = (props) => {
     const [card,setCard]=useState([]);
 useEffect(()=>{
     setCard(props.cardData);
+    console.log(card);
 })
 
 // card&&console.log(card[0]);
@@ -21,8 +22,9 @@ if(card.length){
         <h1 className="card-text">Time {filteredCard.time} </h1>
         <div className="card-text win-number">
                update
-                <div className="left"><h2>{filteredCard.yesterday_no}</h2></div>
-                <div className="right"><h2>{filteredCard.today_no}</h2></div>
+              
+                <div className="left"><h2>{isNaN(filteredCard.yesterday_no)?'-':filteredCard.yesterday_no}</h2></div>
+                <div className="right"><h2>{isNaN(filteredCard.today_no)?'-':filteredCard.today_no}</h2></div>
             </div>
             </>
         )})
