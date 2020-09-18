@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import './App.css';
 import Header from './Components/Header'
 import SideMenu from './Components/SideMenu'
@@ -14,7 +14,7 @@ import Footer from "./Components/Footer"
 import slide1 from "./assets/slide01.jpeg";
 import slide2 from "./assets/slide02.jpeg";
 import slide3 from "./assets/slide03.jpeg";
-import slide4 from "./assets/slide04.jpeg";
+// import slide4 from "./assets/slide04.jpeg";
 // import slide5 from "./assets/slide05.jpeg";
 import "./Style/custom.css";
 
@@ -25,7 +25,7 @@ const s = {
   footer: "flex1 fCenter"
 };
 
-const slides = [slide1, slide2, slide3, slide4];
+const slides = [slide1, slide2, slide3];
 
 const t = [
   {

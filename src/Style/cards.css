@@ -10,7 +10,7 @@
     opacity: 0.95;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #c0bebe;
-    cursor: pointer;
+   /* cursor: pointer;*/
     display: block !important;
 }
 .card-body:hover{
@@ -46,9 +46,12 @@
     border-radius: 10px;
     margin: 10px;
     opacity: .9;
+    color:white;
 }
 .card-button:hover{
     opacity: 1;
+    color:black;
+   
 }
 .row{
     margin: 0px;

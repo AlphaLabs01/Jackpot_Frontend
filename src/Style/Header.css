@@ -1,6 +1,7 @@
 .nav{
     /* background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61)); */
     /* opacity: 0.95; */
+
     background-color: #022442;
     position: fixed;
     width: 100%;
@@ -22,3 +23,13 @@
     height: 60px;
     padding:  10px;
 }
+
+/*.burger{
+    font-size:30px;
+    color:white;
+    float:right;
+    z-index:200;
+   cursor:pointer;
+  
+   
+}*/
