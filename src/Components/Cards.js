@@ -34,9 +34,9 @@ const Cards = (props) => {
             // }
             return (
                 <div className = "row card-row">
-                    <Card info={t[0]} click={props.click} cardData={props.cardData}></Card>
-                    <Card info={t[1]} click={props.click} cardData={props.cardData}></Card>
-                    <Card info={t[2]} click={props.click} cardData={props.cardData}></Card>
+                    <Card info={t[0]} click={props.click} ></Card>
+                    <Card info={t[1]} click={props.click} ></Card>
+                    <Card info={t[2]} click={props.click} ></Card>
                     {/* <Card info={t[3]}></Card>
                     <Card info={t[4]}></Card>
                     <Card info={t[5]}></Card> */}

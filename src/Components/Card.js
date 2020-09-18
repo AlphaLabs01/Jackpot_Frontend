@@ -1,28 +1,37 @@
 import React ,{useState,useEffect} from 'react'
 import "../Style/cards.css"
+import axios from 'axios';
 
 const Card = (props) => {
     const [card,setCard]=useState([]);
 useEffect(()=>{
-    setCard(props.cardData);
-    console.log(card);
-})
+    axios({
+      method:'get',
+      url:'http://13.59.47.18:8081/home/getCardsdata',
+      responseType:'application/json'
+    })
+    .then((res)=>{
+      
+     setCard([res.data.Data]);
+    })
+    
+},[]) 
 
 // card&&console.log(card[0]);
 
 if(card.length){
-    var newCard=  new Array(6);
-    for (var i=0;i<card[0].length;i++)
-        newCard[i]=card[0][i];
-     
+    // var newCard=  new Array(6);
+    // for (var i=0;i<card[0].length;i++)
+    //     newCard[i]=card[0][i];
+    //  
 
-   var trail =  newCard.filter((card)=>card.region===props.info.location.toLowerCase()).map((filteredCard)=>{
+   var trail =  card[0].filter((card1)=>card1.region===props.info.location.toLowerCase()).map((filteredCard)=>{
      return(
         <>
         <h1 className="card-text">Time {filteredCard.time} </h1>
         <div className="card-text win-number">
                update
-              
+
                 <div className="left"><h2>{isNaN(filteredCard.yesterday_no)?'-':filteredCard.yesterday_no}</h2></div>
                 <div className="right"><h2>{isNaN(filteredCard.today_no)?'-':filteredCard.today_no}</h2></div>
             </div>

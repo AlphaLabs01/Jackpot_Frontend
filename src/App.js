@@ -84,8 +84,8 @@ class App extends Component{
     slides: slides,
     dashboardData: [6],
     tableData: [6],
-    chartsData: [6],
-    cardData:[6]
+    chartsData: [6]
+    
   }
 
   componentDidMount = () =>{
@@ -110,17 +110,7 @@ class App extends Component{
       })
     })
 
-    axios({
-      method:'get',
-      url:'http://13.59.47.18:8081/home/getCardsdata',
-      responseType:'application/json'
-    })
-    .then((res)=>{
-      // console.log(res)
-      this.setState({
-        cardData: [res.data.Data]
-      })
-    })
+    
 
     axios({
       method:'get',
@@ -243,7 +233,7 @@ class App extends Component{
           <Table tableData = {this.state.tableData}></Table>
           <br></br>
           <Title title="WIN LOGS AND ANALYTICS"></Title>
-          <Cards trails={t} click={this.openChart} cardData={this.state.cardData} chartsData = {this.state.chartsData}></Cards>
+          <Cards trails={t} click={this.openChart}  chartsData = {this.state.chartsData}></Cards>
           <AboutUs></AboutUs>
           <Footer click={this.openGuidelines}></Footer>
           </div>
