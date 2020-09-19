@@ -1,15 +1,24 @@
 button{
     background-color: transparent;
     font-weight: 400;
-    display: inline;
-    padding-left: 10px !important;
-    border: beige;
+    
+    padding-left: 1rem 2rem !important;
+    border: none;
     cursor: pointer;
     opacity: 0.9;
     font-weight: 400;
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
+    text-align:center;
+    outline:none !important;
+
 }
 button:hover{
     opacity: 1;
     font-weight: 800;
+}
+button:active{
+    outline:none;
+}
+.nav-button{
+padding:1rem 0;
 }
