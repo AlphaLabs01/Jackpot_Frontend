@@ -4,6 +4,10 @@ import NavigatorButton from "./NavigatorButton";
 import menu from "../assets/menu_emoji_n.jpg";
 
 const header = (props) => {
+    const handleToggle=()=>{
+        document.querySelector('.nav-row').classList.toggle('active');
+        document.querySelector('.toggle').classList.toggle('open');
+    }
     return (
         // <div>
         <nav>
@@ -30,7 +34,7 @@ const header = (props) => {
                     {/* <NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/> */}
                   
                 </div>
- <div className='toggle' onClick={()=>document.querySelector('.nav-row').classList.toggle('active')}><span className='bar' ></span></div>
+ <div className='toggle' onClick={handleToggle}><span className='bar' ></span></div>
             </div>
         </nav>
         // </div>
