@@ -206,6 +206,11 @@ class App extends Component{
     // window.open("http://localhost:3000/aboutUs", "blank")       
    }
 
+  openSitemap = () =>{
+     window.open("http://13.59.47.18/sitemap.xml", "_blank") //to open new page 
+     //window.open("http://localhost:3000/sitemap.xml", "blank")       
+   }
+
   render(){
     var today = new Date(),
             date =  today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()+' '+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+' '+(today.getHours()>=12?'PM':'AM');
@@ -235,7 +240,7 @@ class App extends Component{
           <Title title="WIN LOGS AND ANALYTICS"></Title>
           <Cards trails={t} click={this.openChart}  chartsData = {this.state.chartsData}></Cards>
           <AboutUs></AboutUs>
-          <Footer click={this.openGuidelines}></Footer>
+          <Footer click={this.openGuidelines} sitemap={this.openSitemap}></Footer>
           </div>
         </div>
         
