@@ -49,7 +49,7 @@ if(card.length){
             {/*     <div className="left"><h2>{props.cardData.yesterday_no}</h2></div> */}
             {/*     <div className="right"><h2>{props.cardData.today_no}</h2></div> */}
             {/* </div> */}
-            <div>{trail}</div>
+            <div>{trail}</div><br/>
             <h4 className="card-button"  onClick={()=>props.click(props.info.location)}>{props.info.loading}</h4>
             </div>
         </div>

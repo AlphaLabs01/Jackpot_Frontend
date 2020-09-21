@@ -1,9 +1,10 @@
-.nav {
+nav {
     /* background: linear-gradient(75deg, rgb(29, 28, 28), rgb(63, 61, 61)); */
     /* opacity: 0.95; */
 
     background-color: #022442;
-    position: fixed;
+    position: fixed; 
+    
     width: 100%;
     z-index: 100;
 }
@@ -41,7 +42,7 @@
     display: block;
     position: absolute;
     width: 20px;
-     transition:0.5s;
+     transition:0.1s;
 }
 .bar::before {
     top: 6px;

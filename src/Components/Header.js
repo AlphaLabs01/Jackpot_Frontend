@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style/Header.css";
 import NavigatorButton from "./NavigatorButton";
+
 import menu from "../assets/menu_emoji_n.jpg";
 
 const header = (props) => {
@@ -10,7 +11,7 @@ const header = (props) => {
     }
     return (
         // <div>
-        <nav>
+        <nav className="sticky">
             <div className="row nav">
                 <div className="col-sm-2">
                     <div className="box small">
