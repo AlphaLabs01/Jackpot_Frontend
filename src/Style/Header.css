@@ -32,7 +32,7 @@ nav {
     position: relative;
     width: 20px;
     opacity: 0.9;
-    transition:0.5s;
+    transition:0.1s;
 }
 .bar::before,
 .bar::after {
