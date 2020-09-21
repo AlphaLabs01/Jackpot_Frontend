@@ -12,6 +12,7 @@
 .table{
     background-color: #033a69;
     opacity: 0.95;
+
 }
 th {
     font-size: 1.6rem;
@@ -42,9 +43,22 @@ tbody tr:hover{
         padding-bottom: 5px !important;
     }
   }
+  @media (max-width: 720px) {
+    .table-box{
+        padding: 0px !important;
+
+    }
+    th{
+        font-size: 0.8rem;
+    }
+    td{
+        font-size: 0.6rem;
+    }
+  }
   @media (max-width: 560px) {
     .table-box{
         padding: 0px !important;
+
     }
     th{
         font-size: 0.5rem;
@@ -53,3 +67,4 @@ tbody tr:hover{
         font-size: 0.4rem;
     }
   }
+  

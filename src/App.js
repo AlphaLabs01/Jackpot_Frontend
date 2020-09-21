@@ -251,13 +251,14 @@ class App extends Component {
 
         {/* <SideMenu></SideMenu> */}
         <div className="content-page">
+          <Tags tag={headTag}/>
 
           <div className="container-fluid">
 
             <div className={s.container}>
               <div className={s.header}></div>
               <div className={s.main}>
-                <Tags tag={headTag}/>
+                
                 <Slideshow slides={this.state.slides} />
               </div>
             </div>
