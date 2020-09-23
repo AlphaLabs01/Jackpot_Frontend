@@ -21,7 +21,7 @@ import Tags from './Components/Tags';
 import "./Style/custom.css";
 
 const domain='http://moradabadsatta.com';
-// const domain='http://localhost:3000';
+//const domain='http://localhost:3000';
 
 const s = {
   container: "row screenW screenH dGray col",

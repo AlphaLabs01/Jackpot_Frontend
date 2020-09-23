@@ -5,6 +5,11 @@ import NavigatorButton from "./NavigatorButton";
 import menu from "../assets/menu_emoji_n.jpg";
 
 const header = (props) => {
+
+
+ const domain='http://moradabadsatta.com';
+//const domain='http://localhost:3000';
+
     const handleToggle=()=>{
         document.querySelector('.nav-row').classList.toggle('active');
         document.querySelector('.toggle').classList.toggle('open');
@@ -21,16 +26,17 @@ const header = (props) => {
                 </div>
                 <div className="row col-sm-10 ">
                      <div className="nav-row">
-                    <NavigatorButton name="Home" />
+                    <NavigatorButton name="Home" url={`${domain}`} />
                     <NavigatorButton
                         name="Charts"
                         click={props.chartsClick}
                         region="Ghaziabad"
+                        url={`${domain}/charts`} 
                     />
 
-                    <NavigatorButton name="Add Game" />
-                    <NavigatorButton name="Leaks" />
-                    <NavigatorButton name="About Us" click={props.aboutClick} />
+                    <NavigatorButton name="Add Game" url={`${domain}/addgame`} />
+                    <NavigatorButton name="Leaks" url={`${domain}/leaks`} />
+                    <NavigatorButton name="About Us" url={`${domain}/aboutUs`} click={props.aboutClick} />
                     <NavigatorButton name="" /></div>
                     {/* <NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/><NavigatorButton name=""/> */}
                   

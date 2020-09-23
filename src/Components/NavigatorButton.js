@@ -7,9 +7,9 @@ const NavigatorButton = (props) => {
         // 	<div className="nav-button"> <button className="col-sm-2" >
         //     <b>{props.name}</b>
         // </button></div>
-        <div className="nav-button"> <button  >
+        <div className="nav-button"><a href={props.url}><button  >
             <b>{props.name}</b>
-        </button></div>
+        </button></a> </div>
     )
 }
 
